@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Content Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Social Media Content Analyzer</h1>
+        <p class="subtitle">Upload social media posts (PDF or Image) for instant AI-powered engagement feedback.</p>
+    </header>
+
+    <main>
+        <div id="upload-container">
+            <section class="upload-section">
+                <div id="drop-zone" class="drop-zone">
+                    <div class="icon-container">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <p class="primary-text">Drag & drop your file here, or <span class="browse-btn">browse</span></p>
+                    <p class="supported-text">Supported formats: PDF, PNG, JPG, JPEG (Max 10MB)</p>
+                    <input type="file" id="file-input" accept=".pdf,image/png,image/jpeg,image/jpg" multiple hidden>
+                </div>
+
+                <!-- This is the pre-upload file preview -->
+                <div id="file-details" class="file-details hidden">
+                    <div class="file-info">
+                        <span id="file-name" class="file-name">filename.pdf</span>
+                        <span id="file-size" class="file-size">0 KB</span>
+                    </div>
+                    <div class="button-group">
+                        <button id="remove-btn" class="btn btn-secondary">Remove</button>
+                        <button id="upload-btn" class="btn btn-primary">Upload & Test</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- The AI output / Loading box -->
+        <div id="status-box" class="status-box hidden"></div>
+
+        <!-- Contextual Buttons (Only one shows at a time) -->
+        <button id="cancel-btn" class="btn btn-secondary hidden" style="margin-top: 16px; width: 100%; border-color: #8c1d18; color: #f2b8b5;">Cancel Analysis</button>
+        <button id="reset-btn" class="btn btn-secondary hidden" style="margin-top: 16px; width: 100%;">Analyze Another File</button>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

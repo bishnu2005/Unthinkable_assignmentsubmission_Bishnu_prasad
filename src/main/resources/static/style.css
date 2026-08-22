@@ -1,0 +1,175 @@
+/* Base Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #131314;
+    color: #e3e3e3;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Application Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #e3e3e3;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #c4c7c5;
+}
+
+/* Drag and Drop Zone */
+.drop-zone {
+    border: 2px dashed #444746;
+    border-radius: 16px;
+    padding: 48px 20px;
+    text-align: center;
+    background: #131314;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.drop-zone:hover, .drop-zone.dragover {
+    border-color: #a8c7fa;
+    background: #1e1f20;
+}
+
+.icon-container {
+    color: #a8c7fa;
+    margin-bottom: 16px;
+}
+
+.primary-text {
+    font-size: 1.05rem;
+    color: #e3e3e3;
+    margin-bottom: 8px;
+}
+
+.browse-btn {
+    color: #a8c7fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.supported-text {
+    font-size: 0.85rem;
+    color: #c4c7c5;
+}
+
+/* Selected File Display */
+.file-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #282a2c;
+    border: 1px solid #444746;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+.file-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+.file-name {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #e3e3e3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.file-size {
+    font-size: 0.85rem;
+    color: #c4c7c5;
+    margin-top: 4px;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+/* UI Components */
+.btn {
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #a8c7fa;
+    color: #041e49;
+}
+
+.btn-primary:hover {
+    background-color: #b9d4ff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #a8c7fa;
+    border: 1px solid #444746;
+}
+
+.btn-secondary:hover {
+    background-color: #282a2c;
+}
+
+/* Status Notifications */
+.status-box {
+    margin-top: 24px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-break: break-all;
+}
+
+.status-box.success {
+    background: #0f5223;
+    border: 1px solid #137333;
+    color: #c4eed0;
+}
+
+.status-box.error {
+    background: #5c1a17;
+    border: 1px solid #8c1d18;
+    color: #f2b8b5;
+}
+
+.hidden {
+    display: none !important;
+}
