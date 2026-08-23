@@ -1,4 +1,4 @@
-# Social Media Content Analyzer 🚀
+# Social Media Content Analyzer 
 
 **Live Application URL:** [https://unthinkable-assignmentsubmission-bishnu.onrender.com](https://unthinkable-assignmentsubmission-bishnu.onrender.com)
 
